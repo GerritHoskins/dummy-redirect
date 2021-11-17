@@ -9,7 +9,7 @@
 	<script type="text/javascript">
 		function redirect() {
 		var url = window.location.href
-		url = Math.random() < 0.5 ? url + '#bitlabs-event:screenout' : url + '#bitlabs-event:success' ;
+		url = Math.random() < 0.5 ? url + 'screenout.html/#bitlabs-event:screenout' : url + 'complete.html/#bitlabs-event:success' ;
 		 setTimeout(() => {
 			window.location.replace(url)
 		  }, 3000);
