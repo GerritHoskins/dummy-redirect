@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dummy redirect</title>
+  </head>
+  <body style="height: 100%; font-size: 20px" onload="redirect()">
+	<script type="text/javascript">
+		function redirect() {
+		var url = window.location.href
+		url = Math.random() < 0.5 ? url + '#bitlabs-event:screenout' : url + '#bitlabs-event:success' ;
+		 setTimeout(() => {
+			window.location.replace(url)
+		  }, 3000);
+		}
+    </script>
+  </body>
+</html>
